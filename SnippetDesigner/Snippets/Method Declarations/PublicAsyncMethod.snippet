@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Public Async Method</Title>
+			<Author>HyperWave</Author>
+			<Description>Create a public async method</Description>
+			<Shortcut>puam</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp"
+				  Kind="method decl"> 
+				<![CDATA[
+				public async Task$ReturnType$ $MethodName$($end$)
+				{
+					
+				}]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>ReturnType</ID>
+					<ToolTip>The type to return</ToolTip>
+					<Default>&lt;string&gt;</Default>
+				</Literal>
+				<Literal>
+					<ID>MethodName</ID>
+					<ToolTip>The name of the method</ToolTip>
+					<Default>MyMethod</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

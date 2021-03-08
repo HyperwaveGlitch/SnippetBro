@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Snippets\0 QuickAccess\IfNull.snippet" />
+    <None Remove="Snippets\0 QuickAccess\IfNullContinue.snippet" />
+    <None Remove="Snippets\Method Declarations\ConsoleReadline.snippet" />
+    <None Remove="Snippets\Method Declarations\Extension.snippet" />
+    <None Remove="Snippets\Method Declarations\IfNullContinue.snippet" />
+    <None Remove="Snippets\Method Declarations\PrivateAsyncMethod.snippet" />
+    <None Remove="Snippets\Method Declarations\PrivateMethod.snippet" />
+    <None Remove="Snippets\Method Declarations\PrivateStaticMethod.snippet" />
+    <None Remove="Snippets\Method Declarations\PublicAsyncMethod.snippet" />
+    <None Remove="Snippets\Method Declarations\PublicMethod.snippet" />
+    <None Remove="Snippets\Method Declarations\PublicStaticMethod.snippet" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ExampleAndTemplate\Template.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExampleAndTemplate\Example.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\0 QuickAccess\IfNull.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\0 QuickAccess\IfNullContinue.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\Method Declarations\Extension.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\Method Body\ConsoleReadLine.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\Method Declarations\PrivateMethod.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\Method Declarations\PrivateStaticMethod.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\Method Declarations\PrivateAsyncMethod.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\Method Declarations\PublicAsyncMethod.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\Method Declarations\PublicMethod.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\Method Declarations\PublicStaticMethod.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

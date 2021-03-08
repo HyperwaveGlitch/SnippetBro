@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Square Root Example</Title>
+			<Author>Me</Author>
+			<Description>A template for creating snippets, using a method that encapsulates Math.Sqrt as example.</Description>
+			<Shortcut>sqrt</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp"
+				  Kind="method decl"> 
+				
+				<!--Put the code that you want the snippet to produce inside the inner [] of the below block. You don't have to format the text, since
+					formatting and indentations are applied when you use the snippet based on your VS settings.-->
+				<![CDATA[
+				public $ReturnType$ GetSquareRoot($InputType$ $Name$)
+				{
+					var root = Math.Sqrt($Name$);
+					return ($ReturnType$)root;
+				} $end$
+				]]>
+				<!--Use $[Literal or Object Id]$ (where [Literal or Object Id] is the Id of a variable from a Declarations-block) 
+					to refer to variables inside the snippet that the user will change. These will be highlighted in order of appearance.-->
+
+				<!--Literal is used for literal types, like int or bool, 
+					while Object is used for class object types that may or may not exist in your solution.-->
+
+				<!--Use $end$ to specify where the cursor should be inserted when the user press enter.-->
+			</Code>
+			<!--Insert a Declarations-block for each variable in your snippet 
+				if you want to assign it a default value and give it a tool tip.-->
+			<Declarations>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Name of the input variable</ToolTip>
+					<Default>input</Default>
+				</Literal>
+				<Literal>
+					<ID>InputType</ID>
+					<ToolTip>The input type of the method</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>ReturnType</ID>
+					<ToolTip>The return type of the method</ToolTip>
+					<Default>double</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

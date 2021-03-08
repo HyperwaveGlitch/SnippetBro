@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Private Static Method</Title>
+			<Author>HyperWave</Author>
+			<Description>Create a private static method</Description>
+			<Shortcut>prsm</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp"
+				  Kind="method decl"> 
+				<![CDATA[
+				private static $ReturnType$ $MethodName$($end$)
+				{
+					
+				}]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>ReturnType</ID>
+					<ToolTip>The type to return</ToolTip>
+					<Default>string</Default>
+				</Literal>
+				<Literal>
+					<ID>MethodName</ID>
+					<ToolTip>The name of the method</ToolTip>
+					<Default>MyMethod</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
