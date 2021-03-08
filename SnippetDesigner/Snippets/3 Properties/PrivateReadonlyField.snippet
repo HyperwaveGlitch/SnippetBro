@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Private Readonly Field</Title>
+			<Author>HyperWave</Author>
+			<Description>Creates a private readonly field.</Description>
+			<Shortcut>prf</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp"
+				  Kind="type decl"> 
+				<![CDATA[private readonly $TypeName$ _$end$ ;]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>TypeName</ID>
+					<ToolTip>The type or literal you want the field to hold</ToolTip>
+					<Default>myField</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,27 +1,15 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Threading.Channels;
-using System.Xml;
-using Microsoft.VisualBasic.FileIO;
 
-namespace SnippetDesigner
+namespace SnippetBro
 {
 	class Program
 	{
 		private static string _installDir;
 		private static string _appDir;
 
-		/* This is a simple program to help you quickly create and install snippets.
-		 * All folders and snippets found under this project's "Snippets"-folder will be installed (copied)
-		 * to the directory of your choosing when running this program.
-		 *
-		 * The ExampleAndTemplate-folder contains an example with some comments to help you get going.
-		 * It also contains a template that you can copy to the Snippets-folder every time you create a new snippet.
-		 * 
-		 * For more information on creating code snippets, visit:
-		 * https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2019
+		/*
+		 * Default code language is C#. Edit source below to change install location if your snippets are in another language
 		 */
 
 		static void Main(string[] args)

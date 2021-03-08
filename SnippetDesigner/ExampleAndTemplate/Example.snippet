@@ -7,12 +7,22 @@
 			<Description>A template for creating snippets, using a method that encapsulates Math.Sqrt as example.</Description>
 			<Shortcut>sqrt</Shortcut>
 		</Header>
+		<!--			
+		
+		
+		For more information on creating code snippets, visit:
+		https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2019 
+		
+		
+		-->
 		<Snippet>
 			<Code Language="CSharp"
 				  Kind="method decl"> 
 				
-				<!--Put the code that you want the snippet to produce inside the inner [] of the below block. You don't have to format the text, since
-					formatting and indentations are applied when you use the snippet based on your VS settings.-->
+				<!-- Put the code that you want the snippet to produce inside the inner [] of the below block. 
+					 
+					 You don't have to format the layout of the snippet code, since formatting and indentations are applied when you 
+					 use the snippet based on your VS settings. That being said, having formatted the text might prevent issues that could occur otherwise. -->
 				<![CDATA[
 				public $ReturnType$ GetSquareRoot($InputType$ $Name$)
 				{
@@ -20,16 +30,21 @@
 					return ($ReturnType$)root;
 				} $end$
 				]]>
-				<!--Use $[Literal or Object Id]$ (where [Literal or Object Id] is the Id of a variable from a Declarations-block) 
-					to refer to variables inside the snippet that the user will change. These will be highlighted in order of appearance.-->
+				<!-- Use $[Literal or Object Id]$ (where [Literal or Object Id] is the Id of a variable from a Declarations-block) 
+					 to refer to variables inside the snippet that the user will change. These will be highlighted when user press tab during snippet creation-->
 
-				<!--Literal is used for literal types, like int or bool, 
-					while Object is used for class object types that may or may not exist in your solution.-->
+				<!-- Literal is used for literal types, like int or bool, char, string, or null, 
+					 while Object is used for class object types that may or may not exist in your solution.-->
 
-				<!--Use $end$ to specify where the cursor should be inserted when the user press enter.-->
+				<!-- Use $end$ to specify where the cursor should be inserted when the user press enter.-->
+				
+				<!-- Use $selected$ represents selected text. If you select text, and use the snippets menu shortcut (default is ctrl + k, ctrl + s),
+					 the snippet will be inserted around the text, with the selected text in place of the $selected$ keyword.-->
 			</Code>
 			<!--Insert a Declarations-block for each variable in your snippet 
-				if you want to assign it a default value and give it a tool tip.-->
+				if you want to assign it a default value and give it a tool tip.
+				Sometimes default values are needed for certain things to work.
+				-->
 			<Declarations>
 				<Literal>
 					<ID>Name</ID>

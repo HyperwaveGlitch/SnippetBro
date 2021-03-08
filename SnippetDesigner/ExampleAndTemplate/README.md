@@ -1,5 +1,4 @@
-﻿# README 
-## How to use **Snippet Buddy**
+﻿# How to use **Snippet Bro**
 ----
 1. Run the program (debug mode works fine)
 2. Program will copy all folders and files inside the Snippets folder in this program\'s project
