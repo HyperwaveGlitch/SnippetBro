@@ -8,17 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Snippets\0 QuickAccess\IfNotNull.snippet" />
     <None Remove="Snippets\0 QuickAccess\IfNull.snippet" />
     <None Remove="Snippets\0 QuickAccess\IfNullContinue.snippet" />
+    <None Remove="Snippets\0 QuickAccess\IfNullReturn.snippet" />
     <None Remove="Snippets\1 Method Declarations\ConsoleReadline.snippet" />
     <None Remove="Snippets\1 Method Declarations\Extension.snippet" />
     <None Remove="Snippets\1 Method Declarations\IfNullContinue.snippet" />
     <None Remove="Snippets\1 Method Declarations\PrivateAsyncMethod.snippet" />
     <None Remove="Snippets\1 Method Declarations\PrivateMethod.snippet" />
     <None Remove="Snippets\1 Method Declarations\PrivateStaticMethod.snippet" />
+    <None Remove="Snippets\1 Method Declarations\PrivateVoidMethod.snippet" />
     <None Remove="Snippets\1 Method Declarations\PublicAsyncMethod.snippet" />
     <None Remove="Snippets\1 Method Declarations\PublicMethod.snippet" />
     <None Remove="Snippets\1 Method Declarations\PublicStaticMethod.snippet" />
+    <None Remove="Snippets\1 Method Declarations\PublicVoidMethod.snippet" />
     <None Remove="Snippets\3 Properties\PrivateReadonlyField.snippet" />
   </ItemGroup>
 
@@ -29,13 +33,25 @@
     <Content Include="ExampleAndTemplate\Example.snippet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Snippets\0 QuickAccess\IfNotNull.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Snippets\0 QuickAccess\IfNull.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\0 QuickAccess\IfNullReturn.snippet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Snippets\0 QuickAccess\IfNullContinue.snippet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Snippets\1 Method Declarations\Extension.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\1 Method Declarations\PrivateVoidMethod.snippet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Snippets\1 Method Declarations\PublicVoidMethod.snippet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Snippets\2 Method Body\ConsoleReadLine.snippet">

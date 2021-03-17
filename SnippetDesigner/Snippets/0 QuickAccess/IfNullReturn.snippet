@@ -2,15 +2,15 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>If Null Continue</Title>
-			<Author>HyperWave</Author>
-			<Description>Insert a null-check statement to escape loops</Description>
-			<Shortcut>ifnc</Shortcut>
+			<Title>If Null Return</Title>
+			<Author>Hyperwave</Author>
+			<Description>Insert an if null expression with return statement</Description>
+			<Shortcut>ifnr</Shortcut>
 		</Header>
 		<Snippet>
 			<Code Language="CSharp"
 				  Kind="method body"> 
-				<![CDATA[if($selected$ == null) continue;]]>
+				<![CDATA[if($selected$ == null) return;]]>
 			</Code>
 			<Declarations>
 				<Literal>
